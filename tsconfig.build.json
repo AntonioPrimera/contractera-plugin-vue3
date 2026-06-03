@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "rootDir": "src",
     "types": [
       "node"
     ],
@@ -12,8 +13,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.vue",
-    "vite.config.ts"
+    "src/**/*.vue"
   ],
   "exclude": [
     "tests",

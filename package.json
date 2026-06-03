@@ -19,7 +19,7 @@
     "./styles": "./dist/contractera-plugin-vue3.css"
   },
   "scripts": {
-    "build": "vue-tsc -p tsconfig.build.json --declaration --emitDeclarationOnly && vite build",
+    "build": "vite build && vue-tsc -p tsconfig.build.json --declaration --emitDeclarationOnly",
     "test": "vitest run"
   },
   "peerDependencies": {
