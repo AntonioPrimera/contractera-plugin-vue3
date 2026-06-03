@@ -17,8 +17,11 @@
 .contractera-shell {
   box-sizing: border-box;
   width: 100%;
+  border-radius: var(--contractera-radius);
+  background: var(--contractera-bg);
   color: var(--contractera-text);
   font-family: var(--contractera-font);
+  padding: 12px;
 }
 
 .contractera-shell *,
