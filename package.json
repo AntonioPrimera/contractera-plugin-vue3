@@ -1,5 +1,5 @@
 {
-  "name": "@antonioprimera/contractera-plugin-vue3",
+  "name": "@raprim/contractera-plugin-vue3",
   "version": "0.1.0",
   "description": "Vue 3 SDK components for Contractera document workflows.",
   "type": "module",

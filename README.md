@@ -7,13 +7,13 @@ Pachetul este gandit pentru integrare backend-to-backend: frontend-ul aplicatiei
 ## Instalare
 
 ```bash
-npm install @antonioprimera/contractera-plugin-vue3
+npm install @raprim/contractera-plugin-vue3
 ```
 
 Import CSS global:
 
 ```ts
-import '@antonioprimera/contractera-plugin-vue3/styles'
+import '@raprim/contractera-plugin-vue3/styles'
 ```
 
 ## Cerinte backend
@@ -53,7 +53,7 @@ Fluxul corect:
 ## Adapter
 
 ```ts
-import type { ContracteraSdkAdapter } from '@antonioprimera/contractera-plugin-vue3'
+import type { ContracteraSdkAdapter } from '@raprim/contractera-plugin-vue3'
 
 async function requestJson<T>(url: string, init: RequestInit = {}): Promise<T> {
   const response = await fetch(url, {
@@ -108,7 +108,7 @@ Daca backend-ul aplicatiei gazda foloseste CSRF pentru requesturile same-origin,
 
 ```vue
 <script setup lang="ts">
-import { PlaceholderMetadataEditor } from '@antonioprimera/contractera-plugin-vue3'
+import { PlaceholderMetadataEditor } from '@raprim/contractera-plugin-vue3'
 import { createContracteraAdapter } from './contractera-adapter'
 
 const adapter = createContracteraAdapter('template-id')
@@ -125,7 +125,7 @@ Componenta incarca placeholder-ele prin `adapter.listPlaceholders()` si salveaza
 
 ```vue
 <script setup lang="ts">
-import { DocumentComposer } from '@antonioprimera/contractera-plugin-vue3'
+import { DocumentComposer } from '@raprim/contractera-plugin-vue3'
 import { createContracteraAdapter } from './contractera-adapter'
 
 const adapter = createContracteraAdapter('template-id')
@@ -214,7 +214,7 @@ npm publish --access public
 Aplicatiile gazda pot apoi instala versiunea publicata:
 
 ```bash
-npm install @antonioprimera/contractera-plugin-vue3
+npm install @raprim/contractera-plugin-vue3
 ```
 
 ## Dezvoltare
